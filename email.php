@@ -5,7 +5,7 @@
 $subject = 'فرم تماس';
 
 // Your email address. This is where the form information will be sent.
-$emailadd = 'poufall@gmail.com';
+$emailadd = 'zxd1385zxd1385@gmail.com';
 
 // Where to redirect after form is processed.
 $url = 'http://20script.ir/confirmation.html';

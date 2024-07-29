@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="fa"   dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+       .d1{
+         display:grid;
+         grid-template-columns: 50% 50%;
+         background-color: rgba(0, 0, 0, 0.8);         
+         border-radius: 60px;
+       }
+
+       .i1{
+         padding: 69px;
+         width: 650px;
+         height: 400px;
+
+
+       }
+       
+
+       .b1{
+
+        padding-right: 25px;
+        width: 220px;
+        height: 40px;
+        border-top-left-radius: 0%;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px ;
+        background-color: rgb(241, 7, 143);
+        font-size: 20px;
+        border-color: blueviolet;
+        box-sizing: content-box;
+
+       }
+       .b1-hover{
+        
+        
+       }
+
+
+       p {
+        color: #DF4B05;
+
+
+       }
+        h1 {
+
+          color: #DF4B05;
+
+
+        }
+       
+    
+
+/* دکمه نئونی */
+      .a1{
+	color: #03E9F4;
+	display: inline-block;
+	font-size: 30px;
+	letter-spacing: 4px;
+	margin: 20px 40px;
+	padding: 24px 30px;
+	position: relative;
+	overflow: hidden;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 0.5s;
+	-webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  width: 400px ;
+}
+
+.a1:nth-child(1){
+	filter: hue-rotate(290deg);
+}
+
+.a1:nth-child(3){
+	filter: hue-rotate(110deg);
+}
+
+.a1:hover{
+	background: #03E9F4;
+	box-shadow: 0 0 5px #03E9F4, 0 0 25px #03E9F4, 0 0 50px #03E9F4, 0 0 200px #03E9F4;
+	color: #050801;
+}
+
+.a1 span{
+	display: block;
+	position: absolute;
+}
+
+.a1 span:nth-child(1){
+	animation: animate1 1s linear infinite;
+	background: linear-gradient(90deg, transparent, #03E9F4);
+	height: 2px;
+	left: -100%;
+	top: 0;
+	width: 100%;
+}
+
+@keyframes animate1{
+	0%{
+		left: -100%;
+	}
+	50%, 100%{
+		left: 100%;	
+	}
+}
+
+.a1 span:nth-child(2){
+	animation: animate2 1s linear infinite;
+	animation-delay: 0.25s;
+	background: linear-gradient(180deg, transparent, #03E9F4);
+	height: 100%;
+	top: -100%;
+	right: 0;
+	width: 2px;
+}
+
+@keyframes animate2{
+	0%{
+		top: -100%;
+	}
+	50%, 100%{
+		top: 100%;	
+	}
+}
+
+.a1 span:nth-child(3){
+	animation: animate3 1s linear infinite;
+	animation-delay: 0.5s;
+	background: linear-gradient(270deg, transparent, #03E9F4);
+	bottom: 0;
+	height: 2px;
+	right: -100%;
+	width: 100%;
+}
+
+@keyframes animate3{
+	0%{
+		right: -100%;
+	}
+	50%, 100%{
+		right: 100%;	
+	}
+}
+
+.a1 span:nth-child(4){
+	animation: animate4 1s linear infinite;
+	animation-delay: 0.75s;
+	background: linear-gradient(360deg, transparent, #03E9F4);
+	bottom: -100%;
+	height: 100%;
+	left: 0;
+	width: 2px;
+}
+
+@keyframes animate4{
+	0%{
+		bottom: -100%;
+	}
+	50%, 100%{
+		bottom: 100%;	
+	}
+}
+
+       
+/* منوی کشویی */
+
+
+
+.dropdownmenu ul, .dropdownmenu li {
+	margin: 0;
+	padding: 0;
+}
+.dropdownmenu ul {
+	background: gray;
+	list-style: none;
+	width: 100%;
+}
+.dropdownmenu li {
+	float: left;
+	position: relative;
+	width:auto;
+}
+.dropdownmenu a {
+	background: #30A6E6;
+	color: #FFFFFF;
+	display: block;
+	font: bold 12px/20px sans-serif;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.dropdownmenu li:hover a {
+	background: #000000;
+}
+#submenu {
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 35px;
+	visibility: hidden;
+	z-index: 1;
+}
+li:hover ul#submenu {
+	opacity: 1;
+	top: 40px;	/* adjust this as per top nav padding top & bottom comes */
+	 visibility: visible;
+}
+#submenu li {
+	float: none;
+	width: 100%;
+}
+#submenu a:hover {
+	background: #DF4B05;
+}
+#submenu a {
+	background-color:#000000;
+}
+
+
+
+    </style>
+</head>
+<body style="background-image:  url(images.jpg/37226_1530004348.jpg)">
+
+  <nav class="dropdownmenu">
+    <ul>
+      <li><a href="http://www.jochaho.com/wordpress/">Home</a></li>
+      <li><a href="http://www.jochaho.com/wordpress/about-pritesh-badge/">About Me</a></li>
+      <li><a href="#">Articles on HTML5 & CSS3</a>
+        <ul id="submenu">
+          <li><a href="http://www.jochaho.com/wordpress/difference-between-svg-vs-canvas/">Difference between SVG vs. Canvas</a></li>
+          <li><a href="http://www.jochaho.com/wordpress/new-features-in-html5/">New features in HTML5</a></li>
+          <li><a href="http://www.jochaho.com/wordpress/creating-links-to-sections-within-a-webpage/">Creating links to sections within a webpage</a></li>
+        </ul>
+      </li>
+      <li><a href="http://www.jochaho.com/wordpress/category/news/">News</a></li>
+      <li><a href="http://www.jochaho.com/wordpress/about-pritesh-badge/">Contact Us</a></li>
+      <li><a href="#"> my name</a></li>
+      <li><a href="#">Articles on HTML5 & CSS3</a>
+        <ul id="submenu">
+          <li><a href="http://www.jochaho.com/wordpress/difference-between-svg-vs-canvas/">Difference between SVG vs. Canvas</a></li>
+          <li><a href="http://www.jochaho.com/wordpress/new-features-in-html5/">New features in HTML5</a></li>
+          <li><a href="http://www.jochaho.com/wordpress/creating-links-to-sections-within-a-webpage/">Creating links to sections within a webpage</a></li>
+        </ul>
+      </li>
+      <li><a href="http://www.jochaho.com/wordpress/category/news/">News</a></li>
+      <li><a href="http://www.jochaho.com/wordpress/about-pritesh-badge/">Contact Us</a></li>
+      <li><a href="#"> my name</a></li>
+      <li><a href="#">Articles on HTML5 & CSS3</a>
+        <ul id="submenu">
+          <li><a href="http://www.jochaho.com/wordpress/difference-between-svg-vs-canvas/">Difference between SVG vs. Canvas</a></li>
+          <li><a href="http://www.jochaho.com/wordpress/new-features-in-html5/">New features in HTML5</a></li>
+          <li><a href="http://www.jochaho.com/wordpress/creating-links-to-sections-within-a-webpage/">Creating links to sections within a webpage</a></li>
+        </ul>
+      </li>
+      <li><a href="#">خوش آمدگویی!</a></li>
+    </ul>
+  </nav>
+ 
+ 
+  
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <br>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  <div class="d1">
+    <div>
+        <h1  style="text-align: center;">رزومه محمدعلی موسی پور</h1>
+       
+       
+    
+       <p style="text-align: center;">این رزومه در حال تکمیل است.صرفا برای پر کردن صفحه یه چرت و پرتی در ادامه نوشته شده است.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque nihil tenetur natus ipsa, praesentium placeat facilis! Laborum illo quas voluptatibus voluptatum repudiandae tenetur doloribus hic animi? Labore unde sit facere accusantium, eaque reprehenderit ullam dicta reiciendis illo numquam expedita eius. Enim debitis praesentium velit blanditiis sint beatae quam facilis cupiditate.
+        <br>
+        <br>
+        <a href="#" class="a1">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          ارتباط با محمدعلی موسی پور
+        </a>
+       </p>
+    
+       </div>
+       <div>
+        <img src="images.jpg/Atomic-Physics-is-the-Field-of-Physics.jpg" alt="galaxi" class="i1">
+       </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+   
+
+
+
+  <div class="d1">
+    <div>
+        <h1  style="text-align: center;">رزومه محمدعلی موسی پور</h1>
+       
+       
+    
+       <p style="text-align: center;">این رزومه در حال تکمیل است.صرفا برای پر کردن صفحه یه چرت و پرتی در ادامه نوشته شده است.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque nihil tenetur natus ipsa, praesentium placeat facilis! Laborum illo quas voluptatibus voluptatum repudiandae tenetur doloribus hic animi? Labore unde sit facere accusantium, eaque reprehenderit ullam dicta reiciendis illo numquam expedita eius. Enim debitis praesentium velit blanditiis sint beatae quam facilis cupiditate.
+        <br>
+        <br>
+        <a href="#" class="a1">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          ارتباط با محمدعلی موسی پور
+        </a>
+       </p>
+    
+       </div>
+       <div>
+        <img src="images.jpg/Atomic-Physics-is-the-Field-of-Physics.jpg" alt="galaxi" class="i1">
+       </div>
+  </div>
+   
+</body>
+</html>

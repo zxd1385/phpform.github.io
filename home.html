@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta  name="description" content="مرجع تخصصی آموزش کنکور با اساتید حرفه ای کشور" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap" rel="stylesheet">
+    <title>مجموعه آموزشی براکت</title>
+    <link rel="icon" type="image/jpg" href="images.jpg/InShot_20240711_180748900.jpg"  >
+   <style>
+
+body{
+    background-image: url(images.jpg/37226_1530004348.jpg);
+    font-family: "Baloo Bhaijaan 2";
+}
+
+
+
+    a {
+  color: #000;
+}
+
+/* header */
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+/* typing animation */
+ h1 { 
+  animation: type 3s steps(20) infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: consolas, "Courier New", monospace;
+  border-left: 4px solid black;
+  width: 415px;
+  text-align: center;
+}
+
+@keyframes type {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width:415px;
+  }
+} 
+
+
+
+p {
+font-size: 26px;
+}
+
+
+.pd1 {
+/* background-color: rgba(0, 0, 0, 0.2) ; */
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+
+}
+
+.cd1{
+    background-color: rgba(0, 0, 0, 0.5) ;
+    flex-basis: 100%;
+    margin-bottom: 0.5rem;
+    border-radius: 40px;
+    text-align: center;
+    /* display: flex; */
+}  
+.cd1:hover{
+  animation: opacity 2s  ;
+}
+
+
+
+
+
+@media (min-width:600px) {
+
+    .pd1{
+     flex-wrap: nowrap;
+
+
+    }
+    
+   .cd1{
+
+flex-basis: 50%;
+margin: 0.5rem;
+border-radius: 40px;
+
+
+   }
+    
+   .tel{
+      padding-top: 220px;
+
+   }
+
+   main{
+
+    width: 80%;
+    margin: 0 auto;
+   }
+
+
+
+  }
+
+  @keyframes opacity {
+    0%{
+      background-color:  rgba(0, 0, 0, 0.5);
+    }
+
+    50%{
+      background-color:  rgba(0, 0, 0, 0.1);
+    }
+    100%{
+      background-color:  rgba(0, 0, 0, 0.5);
+    }
+    
+  }
+
+
+  @keyframes denger {
+    0%{
+      color: black;
+    }
+    50%{
+      color: rgb(255, 8, 8);
+    }
+    100%{
+      color: black;
+    }
+  }
+
+   
+  .span{
+    animation: denger 0.5s infinite;
+  }
+   
+   /* neon button */
+   
+   .a1{
+	color: #03E9F4;
+	display: inline-block;
+	font-size: 30px;
+	letter-spacing: 4px;
+	margin: 20px 40px;
+	padding: 24px 30px;
+	position: relative;
+	overflow: hidden;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 0.5s;
+	-webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  width: 400px ;
+}
+
+.a1:nth-child(1){
+	filter: hue-rotate(290deg);
+}
+
+.a1:nth-child(3){
+	filter: hue-rotate(110deg);
+}
+
+.a1:hover{
+	background: #03E9F4;
+	box-shadow: 0 0 5px #03E9F4, 0 0 25px #03E9F4, 0 0 50px #03E9F4, 0 0 200px #03E9F4;
+	color: #050801;
+}
+
+.a1 span{
+	display: block;
+	position: absolute;
+}
+
+.a1 span:nth-child(1){
+	animation: animate1 1s linear infinite;
+	background: linear-gradient(90deg, transparent, #03E9F4);
+	height: 2px;
+	left: -100%;
+	top: 0;
+	width: 100%;
+}
+
+@keyframes animate1{
+	0%{
+		left: -100%;
+	}
+	50%, 100%{
+		left: 100%;	
+	}
+}
+
+.a1 span:nth-child(2){
+	animation: animate2 1s linear infinite;
+	animation-delay: 0.25s;
+	background: linear-gradient(180deg, transparent, #03E9F4);
+	height: 100%;
+	top: -100%;
+	right: 0;
+	width: 2px;
+}
+
+@keyframes animate2{
+	0%{
+		top: -100%;
+	}
+	50%, 100%{
+		top: 100%;	
+	}
+}
+
+.a1 span:nth-child(3){
+	animation: animate3 1s linear infinite;
+	animation-delay: 0.5s;
+	background: linear-gradient(270deg, transparent, #03E9F4);
+	bottom: 0;
+	height: 2px;
+	right: -100%;
+	width: 100%;
+}
+
+@keyframes animate3{
+	0%{
+		right: -100%;
+	}
+	50%, 100%{
+		right: 100%;	
+	}
+}
+
+.a1 span:nth-child(4){
+	animation: animate4 1s linear infinite;
+	animation-delay: 0.75s;
+	background: linear-gradient(360deg, transparent, #03E9F4);
+	bottom: -100%;
+	height: 100%;
+	left: 0;
+	width: 2px;
+}
+
+@keyframes animate4{
+	0%{
+		bottom: -100%;
+	}
+	50%, 100%{
+		bottom: 100%;	
+	}
+}
+
+       /* shining text */
+
+
+
+
+
+      .shining  {
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  /* font-size: 2em; */
+  /* letter-spacing: 4px; */
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #f505ed, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 6s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+
+
+.cli{
+          background-color: rgba(67, 177, 245, 0.95);
+          
+        }
+
+          .cli:hover
+          {
+
+           background-color: rgba(112, 84, 250, 0.95); 
+          }
+
+@keyframes animate {
+  0% {
+    background-position: -280%;
+  }
+  100% {
+    background-position: 280%;}
+  
+}
+
+
+
+
+
+
+  
+   
+   </style>
+</head>
+<body>
+
+<!--START---- FormAfzar.Com ----->
+<script type="text/javascript" src="https://formafzar.com/pages/formbuilder/ravesh-formbuilder.js" form-url="https://formafzar.com/form/i098u" form-style="fab" form-link-text="مشاهده فرم" form-button-color="#3f51b5" form-button-icon="https://formafzar.com/pages/formbuilder/images/send-icon.png" form-theme=""></script>
+<!--END--- FormAfzar.Com ----->
+
+
+
+    <header class="header">
+        <a href="./home.html" class="logo">
+             براکت
+             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" style="width: 25px;">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+</svg>
+
+        </a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="./home.html">
+            صفحه اصلی
+          </a></li>
+          <li><a href="./rezome1.html">
+            درباره تیم ما
+          </a></li>
+          <li><a href="./class.html">
+            دوره های آموزشی
+          </a></li>
+          <li><a href="./mohtava.html">
+            محتوای آموزشی
+          </a></li>
+          
+        </ul>
+
+       
+
+    </header>
+    <main>
+
+    <br>
+<br>
+<br>
+<br>
+<h1 >به براکت خوش آمدید...</h1>
+<h3>با مدیریت محمدعلی موسی پور</h3>
+
+
+<div style="text-align: center;">
+
+    <img src="./images.png/loggo.png" alt="لوگوی براکت" style="width: 300px;">
+
+</div>
+
+<div style="background-color: rgba(0, 0, 0, 0.2); border-radius: 40px;">
+    <h2 style="text-align: center;" class="shining">چرا براکت؟</h2>
+    <p style="text-align: center;">
+شاید براتون سوال باشه که چرا اسم این تیم رو گذاشتیم براکت؟ خب همونطور که می دونید تو ریاضیات تابعی 
+داریم به اسم جزء صحیح یا براکت که اعداد حقیقی رو به اعداد صحیح تبدیل می کنه
+ما هم اینجا با همین دیدگاه معتقدیم که شما هر سطحی که داشته باشید اونقدر صحیحتون میکنیم که نهایتا به اهدافتون برسید.
+حالا چرا ما اینقدر از خودمون مطمئنیم؟ تمام اون چیز هایی که شما برای رسیدن به موفقیت احتیاج دارید ما تو این مجموعه داریم.از مشاورین حرفه ای تا اساتید خیلی باسابقه و رتبه های برتر و خلاصه که جمعمون جمعه و فقط جای شما خالیه!پس در ادامه با ما همراه باشید تا بهتون توضیح بدیم!
+
+
+
+
+    </p>
+    <br>
+</div>
+
+<br>
+<br>
+
+<div class="pd1">
+  <div class="cd1" >
+   
+<h2> 
+
+مجموعه ای از مشاورین و اساتید برتر
+</h2>
+<p>
+در براکت مجموعه بزرگی از مشاورین و اساتید برتر کشوری حضور دارن.این مجموعه شامل استاد های
+مطرح کشوری به خصوص از کلانشهر هایی مانند تهران و اصفهان و رتبه های برتر کنکور سراسری هستن
+که تمام تلاششون رو میکنن تا شما به بهترین خودتون برسید.باید توجه کنین تنها در صورتی میتونید موفق بشید که پشت سرتون 
+افراد حرفه ای باشن که ساپورتتون کنن نه کسایی که خودشون تابحال تجربه تحصیلی موفقی نداشتن و یجورایی شکست خورده ان...
+متاسفانه همونطور که میدونید الآن موسسات آموزشی پر از چنین افرادی هستن.کسایی که نه تنها به فکر موفقیت شما نیستن بلکه حتی دانش کمک کردن به شما رو هم ندارن.
+همیشه وقتی نزدیکای کنکور و یا امتحان نهایی میشه سر و کله اونا هم پیدا میشه و ادعای معجزه میکنن!درحالی که هرگز نمیتونن چنین کاری بکنن و فقط با آینده شما بازی میکنن...
+ما در براکت نه اهل چنین بازی هایی هستیم و نه هدفمون اینه.مدرکمون هم رزومه قوی و پرباری هست که از اساتید و رتبه برترها و مشاورینمون براتون آماده کردیم تا باخیال راحت تا آخر مسیر با ما همراه باشید رفقا...
+
+
+</p>
+
+
+
+  </div>
+<br>
+
+  <div class="cd1">
+<h2>
+  رزومه قوی اساتید و مشاورین براکت
+
+  
+</h2>
+
+
+<p>
+همونطور که گفتیم و البته خودتون هم بیشتر در جریان هستید داشتن رزومه قوی یکی از بهترین
+دلایل برای اثبات حقانیت یه مجموعه هست.چیزی که ما به طور دقیق داریمش! برای مشاهده رزومه اساتید
+و مشاورین براکت کافیه روی دکمه 
+مشاهده رزومه 
+که این پایین هست کلیک کنید.بعدش با خیال راحت و در فرصت مناسب کامل مطالعه کنیدش تا متوجه بشید ادعاهای ما 
+تماما حقیقی بوده و گروهی تاپ از نخبه ها در براکت حضور دارن...
+</p>
+  
+<br>
+  <a class="a1" href="./rezome1.html" style="width: 200px; height:30px; font-size: 25px;   ">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+     <strong>رزومه</strong>
+  </a>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+</div>
+<br>
+<br>
+
+
+
+<div style="background-color: rgba(0, 0, 0, 0.2); border-radius: 40px;">
+    <p style="text-align: center; font-size: 20px;"> 
+        شروعش با خودته ولی در ادامش براکت تمام اون چیزهایی که شاید صدتا مشاور و کلاس کنکوری نتونن برات مهیا کنن
+        برات آماده میکنه.تنها کاری که باید بکنی اینه که به ما اعتماد کنی!
+
+
+        <br>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" style="width: 100px;">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+</svg>   
+
+
+    </p>
+    
+
+
+
+
+    
+</div>
+<br>
+<br>
+
+<div class="pd1">
+    <div class="cd1">
+     
+  <h2>
+   کلاس های آنلاین و حضوری
+    
+    
+    
+    </h2>
+    <p>
+
+      یکی از مهمترین مزیت های براکت نسبت به سایر موسسات آموزشی برگزاری انواع کلاس های
+      حضوری و آنلاین هست که شما رو از هر دوره و کلاس دیگه ای کاملا بی نیاز می کنه.اساتید دوره ها هم همونطور که در بخش رزومه مشاهده کردید شماری از رتبه های تاپ و اساتید خوش سابقه کنکور هستن.
+      همچنین یکی دیگه از ویژگی های این دوره های خاص اینه که درکل دوره مشاورین ما روند طی شده توسط دانش پژوه رو به طور دقیق و جزئی زیر نظر میگیرن تا همه به اهداف آموزشی خودشون
+      برسن.اما یه چیز مهمتر که اونم از ویژگی های اختصاصی ماست اینه که شما رو بر اساس سطحتون کلاس بندی می کنیم.روندی که کشورهای برتر مدتهاست از اون استفاده می کنن و نتیجه هم گرفتن.
+      اینطوری هرکسی با هرسطحی میتونه صد در صد از کلاسها بهره ببره و سود کنه...
+
+
+
+
+
+    </p>
+  
+    
+  
+    </div>
+  <br>
+  
+    <div class="cd1">
+  <h2>
+
+
+    ثبت نام کلاس ها
+  </h2>
+
+  <p>
+    خوشبختانه ما همیشه کلاس داریم.از دوره های جامع گرفته تا نکته و تست و ...شما کافیه از طریق دکمه ثبت نام
+    وارد صفحه کلاس ها بشید و بسته به نیازتون دوره مورد نظرتون رو انتخاب کنید.پیشنهاد براکت اینه که حتما با مشاورین مربوط به هر دوره
+    مشورت کنید تا بتونید بهترین انتخاب رو داشته باشید.وقتی درخواست خودتون رو برای یک دوره ثبت کردید منتظر بمونید تا نتیجه ثبت نام به شما پیامک بشه.
+    این روند ممکنه یکمی طول بکشه پس بدون نگرانی منتظر باشید تا بهتون اطلاع داده بشه...
+
+
+
+
+
+  </p>
+    
+  <a class="a1" href="./class.html" style="width: 200px; height:30px; font-size: 20px;   ">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+     <strong>
+      ثبت نام کلاس ها
+     </strong>
+  </a>
+    </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <br>
+  <br>
+  
+  
+  
+  <div style="background-color: rgba(0, 0, 0, 0.2); border-radius: 40px;">
+      
+      <p style="text-align: center;">
+  
+           حتما این صفحه رو چند وقت یکبار چک کنید تا از جدیدترین اخبار براکت مطلع بشید.به خصوص باکس مربوط به
+           اخبار براکت که پایینتر قرار گرفته...
+           اونجا همیشه جدیدترین اخبار مربوط به آموزش و دوره ها قرار میگیرن.
+           در ضمن مواردی مثل تحلیل کنکور سراسری و آزمون های آزمایشی که خیلی جاها رایگان نیست اینجا رایگانه و برای مطلع شدن ازشون کافیه همون باکس اخبار رو بادقت چک کنید
+
+          
+
+  
+  
+      </p>
+  </div>
+  
+  <br>
+  <br>
+ 
+
+
+<div class="pd1">
+    <div class="cd1">
+     
+  <h2>
+    محتوای آموزشی رایگان
+    
+    
+    </h2>
+
+    <p>
+  اینجا در براکت مجموعه ای بسیار بزرگ از محتواهای آموزشی رایگان در اختیار تو هست
+      به طوری که همین محتوا های آموزشی میتونن تا حدی نیازهات رو در آموزش برطرف کنن.حل تست و سوال های تشریحی و یا سوالات امتحان نهایی همه و همه به صورت کاملا رایگان در اختیار شماست تا بتونید ازش استفاده کنید و به معنای واقعی کلمه موفق بشید.همونطور که پیشتر هم گفته شد اینجا تنها هدف گروه ما موفقیت شماست 
+      و دوست داریم درقبال هزینه ای که ازتون دریافت می کنیم بهترین و کاملترین خدمات رو ارائه بدیم.
+      شما هم خیالتون راحت باشه چون بعد از استفاده درست از این محتواها پیشرفت رو احساس خواهید کرد.علاوه بر همه اینها بخشی از مجموعه وویس های مشاوره ای بهترین مشاورین ما هم در کنار همین محتواهای رایگان در اختیار شما قرارگرفته تا بهترین بهره رو از کل مجموعه برده باشید!
+      
+      </p>
+  
+  
+  
+    </div>
+  <br>
+  
+    <div class="cd1">
+  <h2>
+    دسترسی به محتواهای آموزشی
+    </h2>
+    <p>
+      برای دسترسی کافیه از طریق دکمه زیر به صفحه محتوا ها برید و اونجا از هر فیلم یا جزوه ای که خواستید رایگان استفاده کنید...
+      
+      <a class="a1" href="./mohtava.html" style="width: 200px; height:30px; font-size: 20px;   ">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+     <strong>
+      محتوای آموزشی رایگان
+     </strong>
+  </a>
+      </p>
+  
+    </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <br>
+  <br>
+  
+  
+  
+  <div style="background-color: rgba(0, 0, 0, 0.2); border-radius: 40px;">
+      <span class="span">
+        <h2 style="text-align: center; ">
+          اخبار براکت
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" style="width: 30px;">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 1 1 0-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 0 1-1.44-4.282m3.102.069a18.03 18.03 0 0 1-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 0 1 8.835 2.535M10.34 6.66a23.847 23.847 0 0 0 8.835-2.535m0 0A23.74 23.74 0 0 0 18.795 3m.38 1.125a23.91 23.91 0 0 1 1.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 0 0 1.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 0 1 0 3.46" />
+</svg>
+
+
+
+
+        </h2>
+      </span>
+      <p style="text-align: center;">
+        جدیدترین اخبار براکت رو فقط از اینجا بخوانید
+         <br>
+         <br>
+         
+         <a class="a1" href="./khabar.html" style="width: 200px; height:30px; font-size: 20px;   ">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+           <strong>
+            صفحه اخبار
+           </strong>
+        </a>  
+      </p>
+     
+     
+      <br>
+  </div>
+  
+  <br>
+  <br>
+  <br>
+  
+  <div class="pd1">
+    <div class="cd1">
+     
+  <h2 class="tel">
+    ارتباط با ما
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" style="width: 30px;">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+</svg>
+
+    
+    
+    </h2>
+     <p>
+      هر نظری یا پیشنهادی برای ارتقاء سطح کاری ما یا بهبود وضعیت تیممون دارید واقعا خوشحال میشیم که با ما درمیون بذارید.
+        
+      چون هر انتقادی یه پله هست برای ترقی و پیشرفت و پیشرفت ما یعنی فراهم شدن موقعیت های بیشتر برای بچه های خوبی مثل شما که همیشه بهترین خودتون بودید و الآن هم دنبال بهترین ها هستید.اگه در زمینه های مختلف مثل درسی یا برنامه ریزی و... نیاز به مشاوره داشتید
+      
+      باز هم با ما درمیون بذارید.تیم پشتیبانی براکت با حوصله تمام پیام ها رو چک میکنن تا پاسخگوی بازخوردهای سازنده و خوبتون باشن.ممنون که همراه ما هستین.با آرزوی بهترین ها...
+      <br>
+
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" style="width: 50px;">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+</svg>
+
+
+
+
+
+      </p>
+  
+  
+    </div>
+  <br>
+  
+    <div class="cd1" style="background-color: #fffefe;">
+  <h3 style="text-align: center;">با اشتیاق منتظر دریافت نظرات شما هستیم</h3>
+  
+
+
+<!-- ready form -->
+
+<!--START---- FormAfzar.Com ----->
+<script type="text/javascript" src="https://formafzar.com/pages/formbuilder/ravesh-formbuilder.js" form-url="https://formafzar.com/form/i098u" form-style="inline" form-theme=""></script>
+<!--END--- FormAfzar.Com ----->
+
+
+
+
+
+
+    </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+
+  
+
+
+
+    </main>
+    <br>    
+    <br>    
+    <br>    
+    <br>    
+    <footer style="background-color: rgb(0, 0, 0,0.25); text-align: center; padding-bottom: 0px; border-radius: 25px;">
+           <img src="./images.png/loggo.png" alt="لوگوی براکت" style="width: 150px;">
+           <h4>مجموعه آموزشی براکت</h4>
+           <p>کامل ترین مجموعه آموزش حرفه ای کنکور و امتحانات نهایی در ایران</p>
+
+
+    <a href="telto:989355969425">      <h4>
+            09355969425
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" style="width: 20px;">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
+</svg>
+
+            
+            </h4></a>
+
+
+
+      <a href="mailto:zxd1385@gmail.com">      <h4>
+              zxd1385@gmail.com
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" style="width: 18px;">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 0 1 1.037-.443 48.282 48.282 0 0 0 5.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+</svg>
+
+              
+              
+              </h4></a>
+
+              <a href="./rezome1.html">
+                درباره ما
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" style="width: 25px;">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a4.5 4.5 0 0 1-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 1 1-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 0 1 6.336-4.486l-3.276 3.276a3.004 3.004 0 0 0 2.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852Z" />
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4.867 19.125h.008v.008h-.008v-.008Z" />
+</svg>
+
+
+
+
+                </a>
+
+<p>
+  تمام حقوق مادی و معنوی این سایت متعلق به مجموعه آموزشی براکت می باشد
+  
+  </p>
+<br>
+
+    </footer>
+</body>
+</html>-
